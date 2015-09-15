@@ -14,27 +14,46 @@ TODO D: layout. Está hecho chapucerísimo, no he sabido aún hacerlo mejor.
       font-family: sans-serif;
     }
     #header {
+      position: relative;
       text-align:center;
       background-color: black;
-      height: 110px;
-      padding: 20px 150px;
-      border-radius: 60px;
+      height: 100px;
+      padding: 20px 2% 20px 13%;
+      border-radius: 40px;
+    }
+    #body {
+      position: relative;
+      width: 100%;
+      height: 1500px;
+      margin: 5px;
+      padding-left: 0px;
+      background-color: purple;
     }
     #menu {
+      position:absolute;
+      left: 0;
       display:inline-block;
       line-height: 25px;
       margin: 5px;
       padding: 10px;
       padding-right: 30px;
       background-color: white;
-      border-radius: 60px;
+      border-radius: 40px;
       width:30%;
+      height: 100%;
     }
     #section {
+      position: absolute;
+      right: 0;
       display:inline-block;
       margin: 5px;
       float:right;
       padding: 10px;
+      background-color: lightgreen;
+      width: 63%;
+      height: 100%;
+      border-radius: 40px;
+      overflow:hidden;
     }
     #copyright {
 
@@ -75,25 +94,26 @@ TODO D: layout. Está hecho chapucerísimo, no he sabido aún hacerlo mejor.
 
 <div id="header">
   <img src="img/fsociety.png" style="height:100px; width:100px; float:left; display: inline"/>
-  <h1 style="float:center; color:white">Our democracy has been corrupted</h1>
+  <h1 style="float:center; color:white; height: 100px; overflow: hidden;">Our democracy has been corrupted</h1>
 </div>
 
 <!-- BODY: Two big divs form this section, taking 33 and 67% of the total width each -->
+<div id="body" name="mybody">
+  <div id="menu">
+    <ul>
+      <li><a href="http://www.evil.com">The why</a></li>
+      <li><a href="http://www.evil.com">The who</a></li>
+      <li><a href="http://www.evil.com">The when</a></li>
+    </ul>
+  </div>
 
-<div id="menu">
-  <ul>
-    <li><a href="http://www.evil.com">The why</a></li>
-    <li><a href="http://www.evil.com">The who</a></li>
-    <li><a href="http://www.evil.com">The when</a></li>
-  </ul>
-</div>
-
-<div id="section">
-  <img src="img/audiR8.jpg" alt="img/audir8.jpg" style="width:100%"/>
-  <p>
-    Make it yours by free, only by guessing its price
-  </p>
-  <textarea name="price" rows="1" cols="40" ></textarea> <!-- TODO: place this in the right
+  <div id="section">
+    <img src="img/audiR8.jpg" alt="img/audir8.jpg" style="width:100%;border-radius: 40px;"/>
+    <p style="position:relative">
+      Make it yours by free, only by guessing its price
+      <textarea style="position:absolute;bottom:0;" name="price" rows="1" cols="19" >enter your guess here</textarea>
+    </p>
+  </div>
 </div>
 
 <!-- FOOTER: Two small divs make this section, one in the left and another one in the right -->
