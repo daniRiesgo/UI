@@ -1,30 +1,102 @@
 <!DOCTYPE html>
 <html>
+<!--
+TODO D: Colores. Que un no-daltónico se encargue de esto, de momento sólo sirven para saber dónde está cada cosa
+TODO D: layout. Está hecho chapucerísimo, no he sabido aún hacerlo mejor.
+-->
 <head>
   <title>Exercise 1's title</title>
+  <link rel="stylesheet" type="text/css" href="/stylesheet.css">
+  <meta charset="UTF-8">
+  <style>
+    body {
+      background-color: lightblue;
+      font-family: sans-serif;
+    }
+    #header {
+      text-align:center;
+      background-color: black;
+      height: 110px;
+      padding: 20px 150px;
+      border-radius: 60px;
+    }
+    #menu {
+      display:inline-block;
+      line-height: 25px;
+      margin: 5px;
+      padding: 10px;
+      padding-right: 30px;
+      background-color: white;
+      border-radius: 60px;
+      width:30%;
+    }
+    #section {
+      display:inline-block;
+      margin: 5px;
+      float:right;
+      padding: 10px;
+    }
+    #copyright {
+
+    }
+    #links {
+
+    }
+</style>
 </head>
 <body>
+
+<!-- LIST OF CONTENTS (uncomment to show) --><!--
+<ul>
+  <li>HEADER: display a logo and a title</li>
+  <li>BODY:
+    <ul>
+      <li>column 1 (33% width) : menu</li>
+      <li>column 2 (66% width) :
+        <ul>
+          <li>image (100% width)</li>
+          <li>subscription information (text, text field and button)</li>
+          <li>three-column section, each column with an image and a text</li>
+        </ul>
+      </li>
+    </ul>
+  </li>
+  <li>FOOTER:
+    <ul>
+      <li>copyright info</li>
+      <li>social links (fb, twitter)</li>
+    </ul>
+  </li>
+</ul>
+-->
+<!-- ACTUAL WEB PAGE -->
+
+<!-- HEADER -->
+
+<div id="header">
+  <img src="img/fsociety.png" style="height:100px; width:100px; float:left; display: inline"/>
+  <h1 style="float:center; color:white">Our democracy has been corrupted</h1>
+</div>
+
+<!-- BODY: Two big divs form this section, taking 33 and 67% of the total width each -->
+
+<div id="menu">
   <ul>
-    <li>HEADER: display a logo and a title</li>  
-    <li>BODY:
-      <ul>
-        <li>column 1 (33% width) : menu</li>
-        <li>column 2 (66% width) :
-          <ul>
-            <li>image (100% width)</li>
-            <li>subscription information (text, text field and button)</li>
-            <li>three-column section, each column with an image and a text</li>
-          </ul>
-        </li>
-      </ul>
-    </li>
-    <li>FOOTER:
-      <ul>
-        <li>copyright info</li>
-        <li>social links (fb, twitter)</li>
-      </ul>
-    </li>
+    <li><a href="http://www.evil.com">The why</a></li>
+    <li><a href="http://www.evil.com">The who</a></li>
+    <li><a href="http://www.evil.com">The when</a></li>
   </ul>
+</div>
+
+<div id="section">
+  <img src="img/audiR8.jpg" alt="img/audir8.jpg" style="width:100%"/>
+  <p>
+    Make it yours by free, only by guessing its price
+  </p>
+  <textarea name="price" rows="1" cols="40" ></textarea> <!-- TODO: place this in the right
+</div>
+
+<!-- FOOTER: Two small divs make this section, one in the left and another one in the right -->
 
 </body>
 </html>
