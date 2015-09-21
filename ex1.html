@@ -2,103 +2,25 @@
 <html>
 <!--
 TODO D: Colores. Que un no-daltónico se encargue de esto, de momento sólo sirven para saber dónde está cada cosa
-TODO D: layout. Está hecho chapucerísimo, no he sabido aún hacerlo mejor.
 -->
 <head>
   <title>Exercise 1's title</title>
-  <link rel="stylesheet" type="text/css" href="/stylesheet.css">
+  <link rel="stylesheet" type="text/css" href="stylesheet.css">
   <meta charset="UTF-8">
-  <style>
-    body {
-      background-color: lightblue;
-      font-family: sans-serif;
-    }
-    #header {
-      position: relative;
-      text-align:center;
-      background-color: black;
-      height: 100px;
-      padding: 20px 2% 20px 13%;
-      border-radius: 40px;
-    }
-    #body {
-      position: relative;
-      width: 100%;
-      height: 1500px;
-      margin: 5px;
-      padding-left: 0px;
-      background-color: purple;
-    }
-    #menu {
-      position:absolute;
-      left: 0;
-      display:inline-block;
-      line-height: 25px;
-      margin: 5px;
-      padding: 10px;
-      padding-right: 30px;
-      background-color: white;
-      border-radius: 40px;
-      width:30%;
-      height: 100%;
-    }
-    #section {
-      position: absolute;
-      right: 0;
-      display:inline-block;
-      margin: 5px;
-      float:right;
-      padding: 10px;
-      background-color: lightgreen;
-      width: 63%;
-      height: 100%;
-      border-radius: 40px;
-      overflow:hidden;
-    }
-    #copyright {
 
-    }
-    #links {
-
-    }
-</style>
 </head>
 <body>
 
-<!-- LIST OF CONTENTS (uncomment to show) --><!--
-<ul>
-  <li>HEADER: display a logo and a title</li>
-  <li>BODY:
-    <ul>
-      <li>column 1 (33% width) : menu</li>
-      <li>column 2 (66% width) :
-        <ul>
-          <li>image (100% width)</li>
-          <li>subscription information (text, text field and button)</li>
-          <li>three-column section, each column with an image and a text</li>
-        </ul>
-      </li>
-    </ul>
-  </li>
-  <li>FOOTER:
-    <ul>
-      <li>copyright info</li>
-      <li>social links (fb, twitter)</li>
-    </ul>
-  </li>
-</ul>
--->
-<!-- ACTUAL WEB PAGE -->
-
 <!-- HEADER -->
 
-<div id="header">
-  <img src="img/fsociety.png" style="height:100px; width:100px; float:left; display: inline"/>
+<header>
+  <img src="img/logo/fsociety.png" style="height:100px; width:100px; float:left;"/>
   <h1 style="float:center; color:white; height: 100px; overflow: hidden;">Our democracy has been corrupted</h1>
-</div>
+</header>
 
-<!-- BODY: Two big divs form this section, taking 33 and 67% of the total width each -->
-<div id="body" name="mybody">
+<!-- BODY: Two big divs form this section, one double width than the other -->
+
+<section>
   <div id="menu">
     <ul>
       <li><a href="http://www.evil.com">The why</a></li>
@@ -108,15 +30,67 @@ TODO D: layout. Está hecho chapucerísimo, no he sabido aún hacerlo mejor.
   </div>
 
   <div id="section">
-    <img src="img/audiR8.jpg" alt="img/audir8.jpg" style="width:100%;border-radius: 40px;"/>
-    <p style="position:relative">
-      Make it yours by free, only by guessing its price
-      <textarea style="position:absolute;bottom:0;" name="price" rows="1" cols="19" >enter your guess here</textarea>
-    </p>
+    <img src="img/car/audiR8.jpg" alt="img/car/audir8.jpg" />
+      <form class="" action="ex1div.html" method="post">
+        Guess the price
+        <input type="submit" value="QUE NO ME TOQUES" style="float:right">
+        <input type="text" name="fname" style="float:right">
+      </form>
+    <!--
+    TODO: meter las tres imágenes
+    TODO: meter los textos de las imágenes
+    -->
+    <table>
+      <tr>
+        <td>
+          <img src="img/car/a3.png"/>
+        </td>
+        <td>
+          <img src="img/car/gtr.png"/>
+        </td>
+        <td>
+          <img src="img/car/mustang.png"/>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <h2>Audi A3</h2>
+          <p>
+            text1
+          </p>
+        </td>
+        <td>
+          <h2>Nissan GT-R</h2>
+          <p>
+            text2
+          </p>
+        </td>
+        <td>
+          <h2>Ford Mustang</h2>
+          <p>
+            text3
+          </p>
+        </td>
+      </tr>
+    </table>
   </div>
-</div>
+</section>
 
 <!-- FOOTER: Two small divs make this section, one in the left and another one in the right -->
+
+<footer>
+  <div id="copyright">
+    <p>
+      <kbd>HD. All rights reserved ©</kbd>
+    </p>
+  </div>
+  <div id="social">
+    <p>
+      <a href="http://www.facebook.com"><img src="img/social/fb_logo.png" alt=""/></a>
+      <a href="http://www.twitter.com"><img src="img/social/twitter_logo.png" alt="" /></a>
+    </p>
+  </div>
+</footer>
 
 </body>
 </html>
