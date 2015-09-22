@@ -1,47 +1,51 @@
 body {
   background-color: white;
   font-family: sans-serif;
+  margin: 0px;
 }
 header {
-  position: relative;
   text-align:center;
-  background-color: black;
+  background-color: #E6E6E6;
   height: 100px;
   padding: 20px 40px 20px 40px;
-  border-radius: 5px 15px;
-  width: 940px;
+
 }
-section {
-  position: relative;
-  width: 1020px;
-  height: 700px;
-  background-color: black;
+#headerimg{
+      height:100px;
+      width:100px;
+      float:left;
 }
 
+#headertext{
+      height:100px;
+      color:white;
+      float:center;
+}
+
+#center {
+    margin: auto;
+    width: 1024px;
+}
 #menu {
-  line-height: 25px;
+  line-height: 50px;
   float: left;
-  padding: 10px;
-  padding-right: 30px;
   background-color: lightblue;
-  border-radius: 5px 15px;
-  width: 320px;
-  height: 100%;
+  width: 341px;
+  margin: 0px;
 }
 
 #section {
-  float:right;
-  padding: 10px;
   background-color: lightgreen;
-  width: 640px;
+  width: 683px;
+  height: 768px;
+  float:right;
   height: 100%;
-  border-radius: 5px 15px;
-  overflow:hidden;
+  display: inline-block;
+  margin: 0px;
 }
 
 #section img {
   width: 100%;
-  border-radius: 5px 15px;
 }
 
 #section table {
@@ -54,12 +58,12 @@ section {
 
 #section table img{
   width: 100%;
-  border-radius: 0px;
 }
 
 footer {
-  width: 1020;
+  width: 1020px;
   position: relative;
+  display: inline-block;
 }
 #copyright {
   position: absolute;
