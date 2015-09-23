@@ -1,14 +1,14 @@
 body {
   background-color: white;
-  font-family: sans-serif;
+  font-family: Lucida Sans Unicode;
   margin: 0px;
 }
 header {
   text-align:center;
-  background-color: #E6E6E6;
   height: 100px;
-  padding: 20px 40px 20px 40px;
-
+  padding-top: 20px;
+  padding-bottom: 20px;
+  background-image: url(img/header/cloudsky.jpg);
 }
 #headerimg{
       height:100px;
@@ -29,54 +29,87 @@ header {
 #menu {
   line-height: 50px;
   float: left;
-  background-color: lightblue;
-  width: 341px;
-  margin: 0px;
+  background-color: white;
+  width: 301px;
+  margin-top: 10px;
+  padding-top: 0px;
+  height: 400px;
+  text-align: center;
 }
 
 #section {
-  background-color: lightgreen;
+  background-color: white;
   width: 683px;
-  height: 768px;
   float:right;
-  height: 100%;
-  display: inline-block;
   margin: 0px;
+  padding:0px;
 }
 
 #section img {
-  width: 100%;
+  width: 643px;
+  padding: 20px;
 }
 
+form{
+      padding-right: 20px;
+      padding-left: 20px;
+}
+#TextField{
+      width: 180px;
+      height: 20px;
+      float:right;
+      height: 15px;
+}
+#ActionButton{
+      width: 100px;
+      float:right;
+      margin-left: 20px;
+}
 #section table {
-  width: 100%;
+  width: 643px;
+  margin-left: 20px;
+  margin-right: 20px;
+  text-align: justify;
 }
 
 #section table td {
   width: 30%;
+  padding-right:10px;
+  vertical-align: top;
 }
 
 #section table img{
   width: 100%;
+  padding:0px;
 }
 
 footer {
-  width: 1020px;
+  width: 1024px;
   position: relative;
   display: inline-block;
 }
+
 #copyright {
   position: absolute;
   left: 0px;
-  top: 15px;
+  top: 10px;
 }
 #social {
   position: absolute;
   left: 970px;
-  top: 15px;
+  top: 10px;
 
 }
 #social img {
   height: 20px;
   width: 20px;
+}
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    display: block;
 }
