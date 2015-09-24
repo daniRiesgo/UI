@@ -1,6 +1,16 @@
+@font-face {
+    font-family: sanspro-elight;
+    src: url(font/SourceSansPro-ExtraLight.otf.woff);
+}
+
+@font-face {
+    font-family: Abel;
+    src: url(font/SourceSansPro-ExtraLight.otf.woff);
+}
+
 body {
-  background-color: #CCCCCC;
-  font-family: 'Cabin';
+  background-color: #DDDDDD;
+  font-family: sanspro-elight, sans-serif;
   margin: 0px;
 }
 header {
@@ -8,22 +18,27 @@ header {
   height: 100px;
   padding-top: 20px;
   padding-bottom: 20px;
-  background-image: url(img/header/jazz-classic.png);
+  background-image: url(img/header/jazz-classic-white.png);
+  background-size: contain;
+  background-repeat: no-repeat;
   color:white;
-  background-color: black;
+  background-color: white;
 }
 #headerimg{
       height:80px;
       width:100px;
       float:left;
-      margin-bottom:10px;
+
       margin-left: 20px;
+      vertical-align: middle;
 }
 
 #headertext{
-      height:100px;
+      /*height:100px;*/
       color:#FBB43A;
       float:center;
+      font-size: 40px;
+      vertical-align: bottom;
 }
 
 #center {
@@ -34,22 +49,22 @@ header {
   line-height: 50px;
   float: left;
   background-color: white;
-  width: 301px;
-  margin-top: 10px;
-  padding-top: 0px;
-  height: 400px;
+  width: 334px;
+  /*margin-top: 10px;*/
+  padding-top: 20px;
+  height: 1090px;
   text-align: center;
-  background-color: #D1D1D1;
+  background-color: #333333;
 }
 
 #menu a {
     display: block;
     text-decoration:none;
     font-weight: bold;
-    color:black;
+    font-family: ;
+    color: #999999;
 }
 #menu a:hover{
-      background-color: #B8B8B8;
       color: white;
 }
 
@@ -65,16 +80,16 @@ a.three{
 }
 
 #section {
-  background-color: #D1D1D1;
-  width: 683px;
+  background-color: #BBBBBB;
+  width: 690px;
   float:right;
-  margin: 0px;
+  margin-top: 0px;
   padding:0px;
 }
 
 #section img {
-  width: 643px;
-  padding: 20px;
+  width: 670px;
+  padding: 10px;
 }
 
 form{
