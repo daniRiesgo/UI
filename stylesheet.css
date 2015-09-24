@@ -1,7 +1,8 @@
 @font-face {
     font-family: sanspro-elight;
-    src: url(font/SourceSansPro-ExtraLight.otf.woff);
+    src: url(font/source-sans-pro/WOFF/OTF/SourceSansPro-ExtraLight.otf.woff);
 }
+/* SourceSansPro- ( Black / [Extra]Light / Regular / Bold / Semibold ) [It]*/
 
 @font-face {
     font-family: Abel;
@@ -38,7 +39,6 @@ header {
       color:#FBB43A;
       float:center;
       font-size: 40px;
-      vertical-align: bottom;
 }
 
 #center {
