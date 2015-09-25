@@ -1,0 +1,202 @@
+/* GENERAL STYLE STARTS HERE */
+
+@font-face {
+    font-family: sanspro-elight;
+    src: url(font/source-sans-pro/WOFF/OTF/SourceSansPro-ExtraLight.otf.woff);
+}
+@font-face {
+    font-family: sanspro-bold;
+    src: url(font/source-sans-pro/WOFF/OTF/SourceSansPro-Semibold.otf.woff);
+}
+@font-face {
+    font-family: sanspro-regular;
+    src: url(font/source-sans-pro/WOFF/OTF/SourceSansPro-Regular.otf.woff);
+}
+/* SourceSansPro- ( Black / [Extra]Light / Regular / Bold / Semibold ) [It]*/
+
+@font-face {
+    font-family: Abel;
+    src: url(font/Abel-Regular.ttf);
+}
+
+
+/* HEADER STYLE STARTS HERE */
+
+header {
+    background-color: #333333;
+    height: 100px;
+    width: 100%;
+    color: white;
+    text-align: left;
+    margin-bottom: 0px;
+}
+
+div#header-content {
+    position: relative;
+    width: 1024px;
+    margin: auto;
+    margin-bottom: 0px;
+}
+
+header h1 {
+    position: absolute;
+    top: 7px;
+    left: 130px;
+    font-family: sanspro-elight, sans-serif;
+}
+
+img#header-logo {
+    width: 100px;
+    height: 100px;
+    float: left;
+}
+
+ul#menu {
+    position: absolute;
+    right: 5px;
+    top: 60px;
+}
+
+ul#menu li {
+    padding: 10px;
+    display:inline;
+}
+
+ul#menu li a{
+    color: #AAAAAA;
+    text-decoration: none;
+    font-family: Abel, sans-serif;
+}
+
+ul#menu li a:hover {
+    color: white;
+    /*font-weight: bold;*/ /* This causes the undesired displacement */
+}
+
+/* SECTION STYLE STARTS HERE */
+
+section {
+    background-color: #CCCCCC;
+    height: 910px;
+    width: 100%;
+    font-family: sanspro-regular;
+}
+
+div#section-content {
+    width: 1024px;
+    margin: auto;
+    margin-top: 0px;
+    /*border: 1px solid white;*/
+}
+
+div#upper-section {
+    width: 100%;
+    height: 420px;
+    background-color: #DDDDDD;
+    margin-top: 0px;
+}
+
+div#upper-section h2 {
+    padding-top: 50px;
+    text-align: center;
+    color: #333333;
+    font-family: sanspro-bold, sans-serif;
+}
+
+div#upper-section h3 {
+    text-align: center;
+    color: #555555;
+}
+
+div#upper-section-text {
+    -webkit-column-count: 2; /* Chrome, Safari, Opera */
+    -moz-column-count: 2; /* Firefox */
+    column-count: 2;
+    padding: 20px;
+    line-height: 25px;
+    font-family: sanspro-elight, sans-serif;
+    text-align: justify;
+}
+
+div#but-wrap {
+    width: 121px;
+    margin: auto;
+    /*background-color: white;*/ /* Uncomment to center the button */
+}
+
+button#agree {
+    padding: 10px 20px;
+}
+
+
+div#lower-section {
+    width: 1024px;
+    height: 500px;
+    background-color: white;
+}
+
+div#low-sec-table {
+    width: 953px;
+    margin: auto;
+    padding-top: 30px;
+    height: 405px;
+}
+
+div#low-sec-cell {
+    position: relative;
+    width: 465px;
+    height: 200px;
+    overflow: hidden;
+    background-color: #BBBBBB;
+    border: 1px solid black;
+    margin: 4px
+}
+
+div#low-sec-cell img {
+    width: 80%;
+    margin: 5px 0 0 45px;
+}
+
+div#low-sec-cell p {
+    position: absolute;
+    right: 0;
+    bottom: -7px;
+    padding: 10px 15px;
+    background-color: #999999;
+}
+
+
+/* FOOTER STYLE STARTS HERE */
+
+
+footer {
+    background-color: #333333;
+    height: 150px;
+    width: 100%;
+    color: #DDDDDD;
+}
+
+div#footer-content {
+    width: 1024px;
+    margin: auto;
+    position: relative;
+}
+
+ul#foot-list {
+    list-style-type: none;
+    color: #AAAAAA;
+    font-family: Abel, sans-serif;
+    display: inline;
+    float: left;
+}
+
+div#social {
+    position: absolute;
+    right: 10px;
+    top: 10px;
+
+}
+div#social img {
+    height: 20px;
+    width: 20px;
+}
