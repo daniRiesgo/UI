@@ -46,15 +46,20 @@ header {
     width: 1024px;
 }
 #menu {
-  line-height: 50px;
+  line-height: 100px;
+  font-size: 20px;
   float: left;
   background-color: white;
   width: 334px;
-  /*margin-top: 10px;*/
   padding-top: 20px;
-  height: 1090px;
+  height: 1280px;
   text-align: center;
   background-color: #333333;
+}
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
 }
 
 #menu a {
@@ -66,17 +71,7 @@ header {
 }
 #menu a:hover{
       color: white;
-}
-
-a.one{
-
-}
-a.two{
-
-}
-a.three{
-
-
+      font-weight: bold;
 }
 
 #section {
@@ -87,42 +82,44 @@ a.three{
   padding:0px;
 }
 
-#section img {
-  width: 670px;
-  padding: 10px;
+#topimage{
+    width: 630px;
+    height: 350px;
+    margin:30px;
+}
+.down{
+    padding:0px;
+    height:220px;
+    width: 100%;
 }
 
 form{
-      padding-right: 20px;
-      padding-left: 20px;
+    padding-right: 30px;
+    padding-left: 30px;
+    margin: auto;
+    padding-bottom: 5px;
 }
 #TextField{
       width: 180px;
-      height: 20px;
       float:right;
-      height: 15px;
 }
 #ActionButton{
+    margin: 1px;
       width: 100px;
       float:right;
       margin-left: 20px;
 }
 #section table {
   width: 643px;
-  margin-left: 20px;
-  margin-right: 20px;
   text-align: justify;
+  margin: auto;
 }
 
 #section table td {
   width: 30%;
-  padding-right:10px;
   vertical-align: top;
-}
-
-#section table img{
-  width: 100%;
-  padding:0px;
+  padding-left:5px;
+  padding-right: 5px;
 }
 
 footer {
@@ -145,9 +142,4 @@ footer {
 #social img {
   height: 20px;
   width: 20px;
-}
-ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
 }
