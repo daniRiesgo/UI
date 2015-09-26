@@ -66,7 +66,7 @@ div#menu {
     background-color: white;
     width: 334px;
     padding-top: 20px;
-    height: 1280px;
+    height: 1328px;
     text-align: center;
     background-color: #333333;
 }
@@ -125,27 +125,24 @@ input#TextField{
 }
 
 div#section table {
-    width: 643px;
+    width: 630px;
     text-align: justify;
     margin: auto;
+    padding: 20px;
 }
 
 div#section table td {
-    width: 30%;
-    vertical-align: top;
-    padding-left:5px;
-    padding-right: 5px;
     width: 200px;
+    vertical-align: top;
+    padding: 5px;
     overflow: hidden;
-}
-
-td#table-img {
-    height: 200px;
 }
 
 div#section table img {
     padding:0px;
     width: 200px;
+    height: 200px;
+    overflow: hidden;
 }
 
 
@@ -167,7 +164,7 @@ div#copyright {
 div#social {
     position: absolute;
     left: 935px;
-    top: 7px;
+    top: 6px;
 }
 
 div#social img {
