@@ -9,12 +9,6 @@
     padding: 15px;
 }
 
-.row:after {
-    content: "";
-    clear: both;
-    display: block;
-}
-
 /* For mobile phones: */
 [class*="col-"] {
     width: 100%;
@@ -76,23 +70,12 @@ header {
     height: 140px;
     padding-top: 20px;
     padding-bottom: 20px;
-    background-size: contain;
-    background-repeat: no-repeat;
-    color: white;
     background-color: white;
-}
-
-img#headerlogo {
-    height:80px;
-    width:100px;
-    float:left;
-    margin-left: 20px;
-    vertical-align: middle;
 }
 
 img#headerimg {
     height: 120px;
-    margin: none;
+    margin: 0 0 0 50px;
     padding: none;
     float: left;
 
@@ -102,7 +85,6 @@ h1#headertext{
     color:#FBB43A;
     float:center;
     font-size: 40px;
-
 }
 
 
@@ -110,6 +92,8 @@ h1#headertext{
 
 
 /* MENU */
+
+    /* general */
 
 .menu {
     float: left;
@@ -126,6 +110,8 @@ ul#menu-list {
     padding: 0;
 }
 
+    /* links */
+
 ul#menu-list a {
     display: block;
     text-decoration:none;
@@ -137,14 +123,18 @@ ul#menu-list a {
 ul#menu-list a:hover {
     color: white;
     font-weight: bold;
+    text-decoration: overline;
 }
+
+    /* screen adaptation */
 
 @media only screen and (min-width:768px){
     .menu{
-        height: 1422px;
+        height: 1420px;
         line-height: 100px;
     }
 }
+
 @media only screen and (min-width:600px) and (max-width:767px){
     .menu{
         height:auto;
@@ -155,82 +145,97 @@ ul#menu-list a:hover {
         border-left: 0.5px solid white;
         border-right: 0.5px solid white;
     }
-    li{
+    ul#menu-list li{
         display:inline;
     }
 }
 
+
 /* RIGTH SECTION */
 
+    /* general */
+
 div#section {
-    background-color: #BBBBBB;
     float:right;
     margin-top: 0px;
     padding:0px;
 }
 
+    /* top image */
+
 img#top-image {
     padding: 30px;
 }
 
+    /* formulary */
+
 form#section-form {
-    padding-right: 30px;
-    padding-left: 30px;
+    padding: 0 30px;
     margin-top: 10px;
+    overflow: hidden;
 }
 
-input#ActionButton{
-    margin: 1px;
-    width: 100px;
+input#action-button{
+    width: 85px;
     float:right;
-    margin-left: 20px;
+
 }
 
-input#TextField{
-    width: 180px;
+input#text-field{
+    width: 130px;
     float:right;
 }
 
+    /* descriptions */
 
+div#desc-wrap { /* helps aligning the texts with the rest
+                of the elements in the right section */
+    padding: 25px;
+}
+
+div.topic {
+    padding: 5px;
+    text-align: justify;
+}
 
 img.topic-image{
     width:100%;
 }
 
-@media only screen and (min-width:600){
-    div.topics{
-        text-align: justify;
-        width: 33%;
-    }
 
-}
-
-/*#des1 {
-    padding: 5px 5px 5px 30px;
-}
-#des2 {
-    padding: 5px 17px 5px 17px;
-}
-#des3 {
-    padding: 5px 30px 5px 5px;
-}*/
 
 /* FOOTER CSS */
 
+    /* general */
 
 footer {
     width: 1024px;
-    position: relative;
-    display: inline-block;
+    display: inline; /* to put everything in the same line */
 }
 
-div#copyright {
+    /* copyright info */
+
+div.copyright {
+    width: 157px;
     float:left;
+    padding: 15px;
     line-height: 25px;
+}
+
+    /* social links */
+
+div.social {
+    padding: 30px;
+    width: 140px;
+    float: right;
 }
 
 div.social img {
     float:right;
     height: 25px;
     width: 25px;
+}
+
+div.social img:hover {
+    opacity: 0.5;
 }
