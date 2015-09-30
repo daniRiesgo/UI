@@ -1,5 +1,8 @@
 /* GENERAL CSS */
 
+* {
+    box-sizing: border-box;
+}
 
 @font-face {
     font-family: sanspro-elight;
@@ -18,15 +21,13 @@ body {
     margin: 0px;
 }
 
-
 /* HEADER CSS */
 
 
 header {
     text-align:center;
     height: 100px;
-    padding-top: 20px;
-    padding-bottom: 20px;
+    padding:20px;
     background-image: url(img/header/jazz-classic-white.png);
     background-size: contain;
     background-repeat: no-repeat;
@@ -35,17 +36,19 @@ header {
 }
 
 img#headerimg{
-    height:80px;
+    height:100%;
     width:100px;
     float:left;
-    margin-left: 20px;
-    vertical-align: middle;
+    margin:auto;
+    display:block;
 }
 
 h1#headertext{
     color:#FBB43A;
     float:center;
     font-size: 40px;
+    margin:auto;
+    display:block;
 }
 
 
@@ -64,9 +67,9 @@ div#menu {
     font-size: 20px;
     float: left;
     background-color: white;
-    width: 334px;
+    width: 33%;
     padding-top: 20px;
-    height: 1384px;
+    height: 1279px;
     text-align: center;
     background-color: #333333;
 }
@@ -94,15 +97,13 @@ ul#menu-list a:hover {
 
 div#section {
     background-color: #BBBBBB;
-    width: 690px;
+    width: 67%;
     float:right;
-    margin-top: 0px;
-    padding:0px;
 }
 
 img#top-image {
-    width: 630px;
-    padding: 30px;
+    width: 100%;
+    padding:10px;
 }
 
 form#section-form {
@@ -123,27 +124,24 @@ input#TextField{
     width: 180px;
     float:right;
 }
-
-div#section table {
-    width: 100%;
+img.topic-image{
+    width:205px;
+    height:220px;
+    margin:auto;
+    display:block;
+}
+div.topics{
     text-align: justify;
-    margin: auto;
-    padding: 30px;
-}
+    width:33%;
+    float:left;
+    padding:10px;
 
-div#section table td {
-    width: 30%;
-    vertical-align: top;
-    padding: 5px;
 }
-
-td#table-img {
-    height: 200px;
-    background-size: cover;
-}
-
 div#section h2 {
     text-align: center;
+}
+div#section{
+    padding:10px;
 }
 
 
@@ -151,7 +149,7 @@ div#section h2 {
 
 
 footer {
-    width: 1024px;
+    width: 100%;
     position: relative;
     display: inline-block;
 }
