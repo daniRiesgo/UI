@@ -19,6 +19,16 @@
     src: url(font/Abel-Regular.ttf);
 }
 
+a{
+    color: #AAAAAA;
+    text-decoration: none;
+    font-family: Abel, sans-serif;
+}
+
+a:hover {
+    color: white;
+    /*font-weight: bold;*/ /* This causes the undesired displacement */
+}
 
 /* HEADER STYLE STARTS HERE */
 
@@ -61,38 +71,27 @@ ul#menu li {
     padding: 10px;
     display:inline;
 }
-
-ul#menu li a{
-    color: #AAAAAA;
-    text-decoration: none;
-    font-family: Abel, sans-serif;
-}
-
-ul#menu li a:hover {
-    color: white;
-    /*font-weight: bold;*/ /* This causes the undesired displacement */
-}
-
 /* SECTION STYLE STARTS HERE */
 
 section {
     background-color: #CCCCCC;
-    height: 910px;
+    height: 890px;
     width: 100%;
     font-family: sanspro-regular;
 }
 
 div#section-content {
     width: 1024px;
+    height: 890px;
     margin: auto;
     margin-top: 0px;
+    background-color: #DDDDDD;
     /*border: 1px solid white;*/
 }
 
 div#upper-section {
     width: 100%;
     height: 420px;
-    background-color: #DDDDDD;
     margin-top: 0px;
 }
 
@@ -130,15 +129,16 @@ button#agree {
 
 
 div#lower-section {
-    width: 1024px;
-    height: 500px;
+    width: 1004px;
+    height: 400px;
     background-color: white;
+    padding:10px;
+    padding-bottom: 30px;
 }
 
 div#low-sec-table {
     width: 953px;
     margin: auto;
-    padding-top: 30px;
     height: 405px;
 }
 
@@ -170,8 +170,9 @@ div#low-sec-cell p {
 
 
 footer {
+    margin-top: 20px;
     background-color: #333333;
-    height: 150px;
+    height: 120px;
     width: 100%;
     color: #DDDDDD;
 }
@@ -182,12 +183,16 @@ div#footer-content {
     position: relative;
 }
 
-ul#foot-list {
+ul.foot-list {
     list-style-type: none;
     color: #AAAAAA;
     font-family: Abel, sans-serif;
     display: inline;
     float: left;
+}
+li.footer-title{
+    font-weight: bolder;
+    color: white;
 }
 
 div#social {
