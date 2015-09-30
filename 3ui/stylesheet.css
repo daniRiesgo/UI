@@ -76,19 +76,26 @@ header {
     height: 140px;
     padding-top: 20px;
     padding-bottom: 20px;
-    background-image: url(img/header/jazz-classic-white.png);
     background-size: contain;
     background-repeat: no-repeat;
-    color:white;
+    color: white;
     background-color: white;
 }
 
-img#headerimg{
+img#headerlogo {
     height:80px;
     width:100px;
     float:left;
     margin-left: 20px;
     vertical-align: middle;
+}
+
+img#headerimg {
+    height: 120px;
+    margin: none;
+    padding: none;
+    float: left;
+
 }
 
 h1#headertext{
@@ -102,20 +109,14 @@ h1#headertext{
 /* SECTION CSS */
 
 
-/*div#wrap {
-    margin: auto;
-    width: 1024px;
-}*/
-
 /* MENU */
 
 .menu {
-    line-height: 100px;
-    font-size: 20px;
     float: left;
-    background-color: white;
     padding-top: 20px;
     text-align: center;
+    line-height: 30px;
+    font-size: 20px;
     background-color: #333333;
 }
 
@@ -140,17 +141,19 @@ ul#menu-list a:hover {
 
 @media only screen and (min-width:768px){
     .menu{
-        height: 1399px;
+        height: 1422px;
+        line-height: 100px;
     }
 }
-@media only screen and (min-width:600px) and (max-width:768px){
+@media only screen and (min-width:600px) and (max-width:767px){
     .menu{
         height:auto;
     }
     ul#menu-list a{
         float:left;
         width:25%;
-        border-right: 1px solid white;
+        border-left: 0.5px solid white;
+        border-right: 0.5px solid white;
     }
     li{
         display:inline;
@@ -188,20 +191,29 @@ input#TextField{
     float:right;
 }
 
-div.topics{
-    text-align: justify;
-}
+
+
 img.topic-image{
     width:100%;
-    height:auto;
 }
-@media only screen and (min-width:){
-    img.topic-image{
-        /*change height acordingly*/
+
+@media only screen and (min-width:600){
+    div.topics{
+        text-align: justify;
+        width: 33%;
     }
+
 }
 
-
+/*#des1 {
+    padding: 5px 5px 5px 30px;
+}
+#des2 {
+    padding: 5px 17px 5px 17px;
+}
+#des3 {
+    padding: 5px 30px 5px 5px;
+}*/
 
 /* FOOTER CSS */
 
