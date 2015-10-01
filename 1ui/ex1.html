@@ -16,8 +16,9 @@
             <h1 id="headertext">JAZZ JUST</h1>
         </header>
 
-            <!-- BODY: Two big divs form this section, one double width than the other -->
+        <!-- BODY: Two big divs form this section, one double width than the other -->
 
+        <!-- Menu: The narrower div. Contains a four-element list -->
         <div id="menu">
             <ul id="menu-list">
                 <li><a href="http://www.evil.com" target="_blank">ORIGIN</a></li>
@@ -27,9 +28,14 @@
             </ul>
         </div>
 
+        <!-- Section: The wider div. Contains a main image, a formulary to
+            submit your email and three jazz instrument description with an
+            image. -->
         <div id="section">
+            <!-- main image -->
             <img id="top-image" src="img/body/band.jpg"/>
 
+            <!-- formulary section -->
             <form id="section-form" action="ex1.html" method="post">
                 If you want to subscribe to Jazz Just
                 <input id="ActionButton" type="submit" value="Subscribe">
@@ -37,6 +43,7 @@
             </form>
 
             <div class="topics">
+                <!-- instrument description 1 -->
                 <img class="topic-image" src="img/body/drums.jpg"/>
                 <h2>THE DRUMS</h2>
                 <p>
@@ -57,6 +64,7 @@
 
             </div>
             <div class="topics">
+                <!-- instrument description 2 -->
                 <img class="topic-image" src="img/body/sax.jpg"/>
                 <h2>THE SAX</h2>
                 <p>
@@ -77,6 +85,7 @@
                 </p>
             </div>
             <div class = "topics">
+                <!-- instrument description 3 -->
                 <img class="topic-image" src="img/body/piano.jpg"/>
                 <h2>THE PIANO</h2>
                 <p>
@@ -94,17 +103,20 @@
                     the right hand plays melody and improvises, as performed
                     in George Gershwin's "Liza".
                 </p>
-            </div>
-        </div>
+            </div> <!-- end of descriptions wrap -->
+        </div> <!-- end of the wider section -->
 
-<!-- FOOTER: Two small divs make this section, one in the left and another one in the right -->
+<!-- FOOTER: Copyright info (left) and social links (right) -->
 
         <footer>
             <hr>
+            <!-- copyright info -->
             <p id="copyright" property="dc:rights">&copy;
                 <span property="dc:dateCopyrighted">2008</span>
                 <span property="dc:publisher">Jazz Just</span>
             </p>
+
+            <!-- social links -->
             <div id="social">
                 <p>
                     <a href="http://www.facebook.com" target="_blank">
@@ -117,7 +129,7 @@
                         <img src="img/social/yt_logo.png"/>
                     </a>
                 </p>
-            </div>
+            </div> <!-- end of links -->
         </footer>
     </div>
 </body>
