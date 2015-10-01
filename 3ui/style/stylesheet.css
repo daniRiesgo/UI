@@ -121,7 +121,6 @@ ul#menu-list a {
 ul#menu-list a:hover {
     color: white;
     font-weight: bold;
-    text-decoration: overline;
 }
 
     /* screen adaptation */
@@ -140,11 +139,10 @@ ul#menu-list a:hover {
     ul#menu-list a{
         float:left;
         width:25%;
-        border-left: 0.5px solid white;
-        border-right: 0.5px solid white;
     }
     ul#menu-list li{
         display:inline;
+        border-right: 5px white;
     }
 }
 
@@ -171,17 +169,33 @@ form#section-form {
     padding: 0 30px;
     margin-top: 10px;
     overflow: hidden;
+    text-align: center;
 }
 
 input#action-button{
     width: 85px;
-    float:right;
-
+    display: block;
+    margin:auto;
+    text-align: center;
 }
 
 input#text-field{
     width: 130px;
-    float:right;
+    display: block;
+    margin:auto;
+    text-align: center;
+}
+
+@media only screen and (min-width:600px){
+    input#action-button{
+        float: right;
+    }
+    input#text-field{
+        float: right;
+    }
+    form#section-form {
+        text-align: left;
+    }
 }
 
     /* descriptions */
@@ -194,6 +208,9 @@ div#desc-wrap { /* helps aligning the texts with the rest
 div.topic {
     padding: 5px;
     text-align: justify;
+}
+div.topic h2{
+    text-align: center;
 }
 
 img.topic-image{
