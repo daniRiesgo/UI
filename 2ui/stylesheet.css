@@ -147,7 +147,7 @@ div#low-sec-table {
     height: 405px;
 }
 
-div#low-sec-cell {
+div.low-sec-cell {
     position: relative;
     width: 465px;
     height: 200px;
@@ -157,12 +157,12 @@ div#low-sec-cell {
     margin: 4px
 }
 
-div#low-sec-cell img {
+div.low-sec-cell img {
     width: 80%;
     margin: 5px 0 0 45px;
 }
 
-div#low-sec-cell p {
+div.low-sec-cell p {
     position: absolute;
     right: 0;
     bottom: -7px;

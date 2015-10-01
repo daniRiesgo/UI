@@ -48,7 +48,6 @@
     font-family: sanspro-elight;
     src: url(font/source-sans-pro/WOFF/OTF/SourceSansPro-ExtraLight.otf.woff);
 }
-/* SourceSansPro- ( Black / [Extra]Light / Regular / Bold / Semibold ) [It]*/
 
 @font-face {
     font-family: Abel;
@@ -76,14 +75,13 @@ header {
 img#headerimg {
     height: 120px;
     margin: 0 0 0 50px;
-    padding: none;
+    padding: 0px;
     float: left;
 
 }
 
 h1#headertext{
     color:#FBB43A;
-    float:center;
     font-size: 40px;
 }
 
